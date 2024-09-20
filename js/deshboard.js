@@ -35,7 +35,19 @@ document.getElementById('transfer-money')
         showSectionById('container-transfer-money');
 })
 
+
 document.getElementById('transaction')
     .addEventListener("click",function(){
         showSectionById('transaction-container');
 });
+
+
+document.getElementById('get-bonus')
+    .addEventListener("click",function(){
+        showSectionById('get-bonus-container');
+});
+
+document.getElementById('pay-bill')
+    .addEventListener('click', function(){
+        showSectionById('pay-bill-container');
+})

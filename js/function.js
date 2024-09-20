@@ -13,6 +13,9 @@ function showSectionById(id){
     document.getElementById('container-add-money').classList.add('hidden')
     document.getElementById('container-cash-out').classList.add('hidden')
     document.getElementById('container-transfer-money').classList.add('hidden');
+    document.getElementById('transaction-container').classList.add('hidden');
+    document.getElementById('get-bonus-container').classList.add('hidden');
+    document.getElementById('pay-bill-container').classList.add('hidden');
 
     document.getElementById(id).classList.remove('hidden');
 }

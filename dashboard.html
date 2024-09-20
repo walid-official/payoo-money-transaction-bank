@@ -32,8 +32,9 @@
               <button id="transaction" class="btn">Transaction</button>
             </div>
            <!-- Button Section End -->
+
             <!-- Add Money section Start -->
-            <div id="container-add-money" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+              <div id="container-add-money" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
                 <form class="card-body">
                     <div class="">
                         <h1 class="text-center text-2xl font-bold mb-6">Add Money</h1>
@@ -59,8 +60,10 @@
                 </form>
               </div>
               <!-- Add Money section End -->
+
+
                <!-- Cash Out Page Start-->
-               <div id="container-cash-out" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+              <div id="container-cash-out" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
                 <form class="card-body">
                   <div class="">
                     <h1 class="text-center text-2xl font-bold mb-6">Cash Out</h1>
@@ -110,9 +113,53 @@
                     <div class="form-control mt-6">
                       <button id="transfer-btn" class="btn btn-primary">Transfer Money</button>
                     </div>
-                    </form>
-                  </div>
+                  </form>
+                </div>
                 <!-- Transfer Money Page End -->
+                <!-- Pay Bill page Start -->
+                <div id="pay-bill-container" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10">
+                  <div class="card-body">
+                    <div class="">
+                      <h1 class="text-center text-2xl font-bold mb-6">Pay Bill</h1>
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pay Bill</span>
+                      </label>
+                      <input id="pay-bill-input" type="text" placeholder="pay Your Bill" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin Number</span>
+                      </label>
+                      <input id="pay-bill-pin" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                      <label class="label">
+                        <a href="#" class="label-text-alt link link-hover">Forgot pin</a>
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="pay-bill-btn" class="btn btn-primary">Pay Bill</button>
+                    </div>
+                  </div>
+                </div>
+
+                 <!-- Pay Bill page End -->
+                  <!-- get Bonus page Start -->
+                  <div id="get-bonus-container" class="hidden">
+                    <div>
+                      <div class="form-control pt-4 ">
+                        <label class="label">
+                          <span class="label-text text-white">Get Bonus</span>
+                        </label>
+                        <input id="coupon-card" type="password" placeholder="Enter Your Coupon" class="input input-bordered" required />
+                        <div class="form-control mt-6">
+                          <button id="get-bonus-btn" class="btn btn-primary">Get Bonus</button>
+                        </div>
+                        </label>
+                      </div>
+                   </div>
+                  </div>
+                 <!-- get Bonus page End -->
                   <!-- Transaction Page Start -->
                   <div id="transaction-container" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl mt-10 p-6">
                     <div class="">
@@ -128,5 +175,7 @@
     <script src="js/deshboard.js"></script>
     <script src="js/cashout.js"></script>
     <script src="js/transfer.js"></script>
+    <script src="js/get-bonus.js"></script>
+    <script src="js/pay-bill.js"></script>
 </body>
 </html>
